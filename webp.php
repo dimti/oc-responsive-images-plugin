@@ -60,8 +60,8 @@ function main()
         ],
         'convert' => [
             'sharp-yuv' => false,
+            'auto-limit' => false,
 	        'quality' => 87,
-	        'max-quality' => 87,
         ],
     ]);
 }
