@@ -58,8 +58,10 @@ function main()
             ],
             'cache-control-header' => 'public, max-age=31536000',
         ],
-        'convert'              => [
-	    'quality' => 95,
+        'convert' => [
+            'sharp-yuv' => false,
+	        'quality' => 87,
+	        'max-quality' => 87,
         ],
     ]);
 }

@@ -4,9 +4,12 @@ namespace OFFLINE\ResponsiveImages\Classes;
 
 use October\Rain\Resize\Resizer as ResizerOC;
 use Winter\Storm\Database\Attach\Resizer as ResizerWN;
+use October\Rain\Database\Attach\Resizer as ResizerOCv1;
 
 if (class_exists(ResizerWN::class)) {
     class Resizer extends ResizerWN { }
+} elseif (class_exists(ResizerOCv1::class)) {
+    class Resizer extends ResizerOCv1 { }
 } else {
     class Resizer extends ResizerOC { }
 }
